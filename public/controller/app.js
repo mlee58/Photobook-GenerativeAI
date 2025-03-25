@@ -5,8 +5,8 @@ import { ProfileController } from "./ProfileController.js";
 import { Router } from "./Router.js";
 import { loginFirebase, logoutFirebase, createAccount } from "./firebase_auth.js";
 import { startSpinner, stopSpinner } from "../view/util.js";
-document.getElementById('appHeader').textContent = 'Cloud Web Template'
-document.title = 'App Template';
+document.getElementById('appHeader').textContent = 'My Photo Book'
+document.title = 'PhotoBook';
 
 const routes = [
     { path: '/', view: HomeView, controller: HomeController },
