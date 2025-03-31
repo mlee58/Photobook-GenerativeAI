@@ -5,11 +5,14 @@ import { ProfileController } from "./ProfileController.js";
 import { Router } from "./Router.js";
 import { loginFirebase, logoutFirebase, createAccount } from "./firebase_auth.js";
 import { startSpinner, stopSpinner } from "../view/util.js";
+import { SharedWithView } from "../view/SharedWithView.js";
+import { SharedWithController } from "./SharedWithController.js";
 document.getElementById('appHeader').textContent = 'My Photo Book'
 document.title = 'PhotoBook';
 
 const routes = [
     { path: '/', view: HomeView, controller: HomeController },
+    { path: '/sharedwith', view: SharedWithView, controller: SharedWithController },
     { path: '/profile', view: ProfileView, controller: ProfileController }
 
 ];
