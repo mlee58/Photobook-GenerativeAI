@@ -123,9 +123,9 @@ export class HomeController{
             return;
         }
 
-        if(confirm('Do you want to generate a description for this image by Gemini?')){
-            //return;
-        
+        if(!confirm('Do you want to generate a description for this image by Gemini?')){
+            return;
+        }
         console.log('sss');
         //call cloud function to generate image description
         startSpinner()
@@ -138,7 +138,7 @@ export class HomeController{
             console.error(e);
             alert('Error generating image description');
         }
-    }
+    
     }
 
     async onSubmitEditForm(e, photoNote){
