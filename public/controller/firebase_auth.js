@@ -1,4 +1,4 @@
-import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged,createUserWithEmailAndPassword,} from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js"
+import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged,createUserWithEmailAndPassword,} from "https://www.gstatic.com/firebasejs/11.3.1/firebase-auth.js"
 import { app } from "./firebase_core.js";
 import { router } from "./app.js";
 

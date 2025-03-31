@@ -1,4 +1,4 @@
-import { getFirestore, collection, addDoc, getDocs, query, where, orderBy, updateDoc, doc, deleteDoc} from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js"
+import { getFirestore, collection, addDoc, getDocs, query, where, orderBy, updateDoc, doc, deleteDoc} from "https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.js"
 
 import{ app } from './firebase_core.js';
 import { PhotoNote } from "../model/PhotoNote.js";
